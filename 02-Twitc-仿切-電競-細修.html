@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02-Twitc-仿切-電競-細修</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 微軟正黑體;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 50px;
+            background-color: wheat;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+        .logo{
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            position: absolute;
+            margin-left: 20px;
+        }
+        .menu{
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+            margin-left: 70px;
+        }
+
+        .search-bar{
+            display: flex;
+        }
+
+        .search-btn{
+            width: 35px;
+            height: 36px;
+            background-color: yellowgreen;
+        }
+
+        .member{
+            display: flex;
+        }
+
+        .crown-btn {
+            width: 20px;
+            height: 20px;
+            background-color: turquoise;
+        }
+
+        .sign-in-sign-up {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+        }
+
+        .core-btn{
+            width: 20px;
+            height: 20px;
+            background-color: turquoise;
+        }
+
+        aside{
+            width: 50px;
+            height: calc( 100vh - 50px );
+            background-color: gray;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        main{
+            margin: 0 0 0 50px ;
+        }
+
+        .e-sport{
+            font-size: 60px;
+            margin: 0 0 10px 0;
+        }
+
+        .e-sport-description{
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 46px;
+        }
+
+        .row{
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col{
+            min-width: 293px;
+        }
+
+        .container{
+            padding: 40px 50px;
+        }
+
+        .game-card{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .game-img{
+            width: 40px;
+            height: 50px;
+            background-color: blue;
+        }
+        
+        .game-info{
+            width: 182px;
+            font-size: 13px;
+        }
+
+        .live-block{
+            height: 50px;
+        }
+
+        .live{
+            background-color: red;
+            padding: 2px 6px;
+            color: white;
+            font-size: 13px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+
+        
+        .game-info>p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-btn">
+                    <a href="">
+                        瀏覽
+                    </a>
+                </li>
+                <li class="menu-btn">    
+                    <a href="">
+                        ...
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <input type="text" class="search-input">
+            <div class="search-btn"></div>
+        </div>
+
+        <div class="member">
+            <div class="crown-btn"></div>
+            <ul class="sign-in-sign-up">
+                <li class="sign-in">
+                    <a href="">
+                        登入
+                    </a>
+                </li>
+                <li class="sign-up">
+                    <a href="">
+                        註冊
+                    </a>
+                </li>
+            </ul>
+            <div class="core-btn"></div>
+        </div>
+        
+    </header>
+    <aside>
+            
+    </aside>
+    <main>
+        <div class="container">
+            <h1 class="e-sport">
+                電競
+            </h1>
+            <p class="e-sport-description">
+                即時賽況、賽事精華和您最愛的職業玩家都在這裡
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="game-card">
+                        <div class="game-img"></div>
+                        <div class="game-info">
+                            <p class="game-name">
+                                Sky: Children of the Light
+                            </p>
+                            <p class="sub info">
+                                觀眾人數：1萬
+                            </p>
+                        </div>
+                        <div class="live-block">
+                            <div class="live">
+                                LIVE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

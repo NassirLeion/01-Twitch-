@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-Twitch仿切-ME-header+aside</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-menu {
+            display: flex;
+        }
+
+        .logo {
+            padding-left: 15px;
+        }
+
+        .logo-menu-bar {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            font-size: 18px;
+            font-family: 微軟正黑體;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .logo-menu-bar-read {
+            padding-left: 30px;
+        }
+
+        .logo-menu-bar-more {
+            padding-left: 50px;
+        }
+
+        .search {
+            display: flex;
+        }
+
+        .search-bar {
+            width: 440px;
+            height: 45px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            background-color: rgb(235, 235, 235);
+            border: none;
+        }
+
+        .search-btn {
+            padding-left: 1px;
+        }
+
+        .login-menu {
+            display: flex;
+            align-items: center;
+            padding-right: 22px;
+        }
+
+        .login-bar {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .login-menu-crown {
+            padding-right: 18px;
+        }
+
+        .login-bar-lable-login>a {
+            background-color: #E2E2E2;
+            padding: 12px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .login-bar-lable-register>a {
+            background-color: #B641FA;
+            padding: 12px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .login-bar-lable-login {
+            padding-right: 18px;
+        }
+
+        .login-bar-lable-register {
+            padding-right: 18px;
+        }
+
+        .aside {
+            width: 63px;
+            height: 100vh;
+            background-color: #EFEFEF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .aside-container {
+            margin-top: 15px;
+        }
+
+        .circle {
+            width: 36px;
+            height: 36px;
+            border-radius: 999em;
+            background-color: teal;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="logo-menu">
+                <div class="logo">
+                    <img src="./img/twitch.jpg" alt="" height="28px" width="28px">
+                </div>
+                <ul class="logo-menu-bar">
+                    <li class="logo-menu-bar-read">
+                        <a href="" style="text-decoration: none; color: black;">
+                            瀏覽
+                        </a>
+                    </li>
+                    <li class="logo-menu-bar-more">
+                        <a href="" style="text-decoration: none; color: black;">
+                            ...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="search-bar">
+                <div class="search-btn">
+                    <img src="./img/放大鏡.jpg" alt=""
+                        style="height: 45px; width: 45px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;">
+                </div>
+            </div>
+            <div class="login-menu">
+                <div class="login-menu-crown">
+                    <img src="./img/crown.jpg" alt="" style="height: 24px; width: 24px;">
+                </div>
+                <ul class="login-bar">
+                    <li class="login-bar-lable-login">
+                        <a href="">
+                            登入
+                        </a>
+                    </li>
+                    <li class="login-bar-lable-register">
+                        <a href="">
+                            註冊
+                        </a>
+                    </li>
+                </ul>
+                <div class="logoin-menu-member">
+                    <a href="">
+                        <img src="./img/個人.jpg" alt="" style="width: 24px; height: 24px;">
+                    </a>
+
+                </div>
+            </div>
+
+        </header>
+        <div class="aside">
+            <div class="aside-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
